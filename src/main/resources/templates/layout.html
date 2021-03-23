@@ -1,0 +1,747 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+
+
+	<!--welcome-hero start -->
+	<div th:fragment="layout-header">
+		<header id="home" class="welcome-hero">
+			<!-- header-carousel Start -->
+			<div th:fragment="layout-header-carousel">
+				<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+					<!--/.carousel-indicator -->
+					<ol class="carousel-indicators">
+						<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+						<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+						<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+					</ol>
+					<!-- /ol-->
+					<!--/.carousel-indicator -->
+
+					<!--/.carousel-inner -->
+					<div class="carousel-inner" role="listbox">
+						<!-- .item -->
+						<div class="item active">
+							<div class="single-slide-item slide1">
+								<div class="container">
+									<div class="welcome-hero-content">
+										<div class="row">
+											<div class="col-sm-7">
+												<div class="single-welcome-hero">
+													<div class="welcome-hero-txt">
+														<h4>Sản phẩm được ưa chuộng</h4>
+														<h2>Ghế tràm bọc nệm</h2>
+														<button class="btn-cart welcome-add-cart" onclick="window.location.href='comming-soon'">
+															<span class="lnr lnr-plus-circle"></span> Chi tiết
+														</button>
+													</div>
+													<!--/.welcome-hero-txt-->
+												</div>
+												<!--/.single-welcome-hero-->
+											</div>
+											<!--/.col-->
+											<div class="col-sm-5">
+												<div class="single-welcome-hero">
+													<div class="welcome-hero-img">
+														<img src="/images/slider/slider1.png" alt="slider image">
+													</div>
+													<!--/.welcome-hero-txt-->
+												</div>
+												<!--/.single-welcome-hero-->
+											</div>
+											<!--/.col-->
+										</div>
+										<!--/.row-->
+									</div>
+									<!--/.welcome-hero-content-->
+								</div>
+								<!-- /.container-->
+							</div>
+							<!-- /.single-slide-item-->
+
+						</div>
+						<!-- /.item .active-->
+
+						<div class="item">
+							<div class="single-slide-item slide2">
+								<div class="container">
+									<div class="welcome-hero-content">
+										<div class="row">
+											<div class="col-sm-7">
+												<div class="single-welcome-hero">
+													<div class="welcome-hero-txt">
+														<h4>Sản phẩm được ưa chuộng</h4>
+														<h2>Ghế cao su chất lượng cao</h2>
+														<button class="btn-cart welcome-add-cart" onclick="window.location.href='comming-soon'">
+															<span class="lnr lnr-plus-circle"></span> Chi tiết
+														</button>
+													</div>
+													<!--/.welcome-hero-txt-->
+												</div>
+												<!--/.single-welcome-hero-->
+											</div>
+											<!--/.col-->
+											<div class="col-sm-5">
+												<div class="single-welcome-hero">
+													<div class="welcome-hero-img">
+														<img src="/images/slider/slider2.png" alt="slider image">
+													</div>
+													<!--/.welcome-hero-txt-->
+												</div>
+												<!--/.single-welcome-hero-->
+											</div>
+											<!--/.col-->
+										</div>
+										<!--/.row-->
+									</div>
+									<!--/.welcome-hero-content-->
+								</div>
+								<!-- /.container-->
+							</div>
+							<!-- /.single-slide-item-->
+
+						</div>
+						<!-- /.item .active-->
+
+						<div class="item">
+							<div class="single-slide-item slide3">
+								<div class="container">
+									<div class="welcome-hero-content">
+										<div class="row">
+											<div class="col-sm-7">
+												<div class="single-welcome-hero">
+													<div class="welcome-hero-txt">
+														<h4>Sản phẩm được ưa chuộng</h4>
+														<h2>Ghế bọc da cao cấp</h2>
+														<button class="btn-cart welcome-add-cart" onclick="window.location.href='comming-soon'">
+															<span class="lnr lnr-plus-circle"></span> Chi tiết
+														</button>
+													</div>
+													<!--/.welcome-hero-txt-->
+												</div>
+												<!--/.single-welcome-hero-->
+											</div>
+											<!--/.col-->
+											<div class="col-sm-5">
+												<div class="single-welcome-hero">
+													<div class="welcome-hero-img">
+														<img src="/images/slider/slider3.png" alt="slider image">
+													</div>
+													<!--/.welcome-hero-txt-->
+												</div>
+												<!--/.single-welcome-hero-->
+											</div>
+											<!--/.col-->
+										</div>
+										<!--/.row-->
+									</div>
+									<!--/.welcome-hero-content-->
+								</div>
+								<!-- /.container-->
+							</div>
+							<!-- /.single-slide-item-->
+
+						</div>
+						<!-- /.item .active-->
+					</div>
+					<!-- /.carousel-inner-->
+
+				</div>
+			</div>
+			<!-- header-carousel End -->
+
+			<!-- top-area Start -->
+			<div th:fragment="layout-header-top-area">
+				<div class="top-area">
+					<div class="header-area">
+						<!-- Start Navigation -->
+						<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+							<!-- Start Top Search -->
+							<div class="top-search">
+								<div class="container">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-search"></i></span> <input type="text" class="form-control" placeholder="Tìm kiếm"> <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+									</div>
+								</div>
+							</div>
+							<!-- End Top Search -->
+
+							<div class="container">
+								<!-- Start Atribute Navigation -->
+								<div class="attr-nav">
+									<ul>
+										<li class="search"><a href="#"><span class="lnr lnr-magnifier"></span></a></li>
+										<!-- 
+										<li class="nav-setting"><a href="#"><span class="lnr lnr-cog"></span></a></li>
+										 -->
+										<!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="lnr lnr-cart"></span> <span class="badge badge-bg-1" th:text="#{number.default}"></span>
+										</a>
+											<ul class="dropdown-menu cart-list s-cate">
+												<li class="single-cart-list"><a href="#" class="photo"><img src="/images/collection/arrivals1.png" class="cart-thumb" alt="image" /></a>
+													<div class="cart-list-txt">
+														<h6>
+															<a href="#">ghế<br> đệm
+															</a>
+														</h6>
+														<p>
+															1 x - <span class="price">2.500.000</span>
+														</p>
+													</div> /.cart-list-txt
+													<div class="cart-close">
+														<span class="lnr lnr-cross"></span>
+													</div> /.cart-close</li>
+												/.single-cart-list
+												<li class="single-cart-list"><a href="#" class="photo"><img src="/images/collection/arrivals2.png" class="cart-thumb" alt="image" /></a>
+													<div class="cart-list-txt">
+														<h6>
+															<a href="#">ghế <br> đệm
+															</a>
+														</h6>
+														<p>
+															1 x - <span class="price">3.000.000</span>
+														</p>
+													</div> /.cart-list-txt
+													<div class="cart-close">
+														<span class="lnr lnr-cross"></span>
+													</div> /.cart-close</li>
+												/.single-cart-list
+												<li class="single-cart-list"><a href="#" class="photo"><img src="/images/collection/arrivals3.png" class="cart-thumb" alt="image" /></a>
+													<div class="cart-list-txt">
+														<h6>
+															<a href="#">ghế<br> gỗ
+															</a>
+														</h6>
+														<p>
+															1 x - <span class="price">1.800.000</span>
+														</p>
+													</div> /.cart-list-txt
+													<div class="cart-close">
+														<span class="lnr lnr-cross"></span>
+													</div> /.cart-close</li>
+												/.single-cart-list
+												<li class="total"><span>Tổng: 7.300.000Đ</span>
+													<button class="btn-cart pull-right" onclick="window.location.href='#'">Giỏ hàng</button></li>
+											</ul></li>
+										/.dropdown -->
+									</ul>
+								</div>
+								<!--/.attr-nav-->
+								<!-- End Atribute Navigation -->
+
+								<!-- Start Header Navigation -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+										<i class="fa fa-bars"></i>
+									</button>
+									<a class="navbar-brand" th:href="#{link.home-page}">Furn-Co</a>
+
+								</div>
+								<!--/.navbar-header-->
+								<!-- End Header Navigation -->
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+									<ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+										<li class=" scroll active"><a href="#home">Trang chủ</a></li>
+										<li class="scroll"><a href="#new-arrivals">SP mới</a></li>
+										<li class="scroll"><a href="#blog">Nguyên Bộ</a></li>
+										<li class="scroll"><a href="#feature">SP Nổi bật</a></li>
+										<li class="scroll"><a href="#newsletter">Liên hệ</a></li>
+									</ul>
+									<!--/.nav -->
+								</div>
+								<!-- /.navbar-collapse -->
+							</div>
+							<!--/.container-->
+						</nav>
+						<!--/nav-->
+						<!-- End Navigation -->
+					</div>
+					<!--/.header-area-->
+					<div class="clearfix"></div>
+
+				</div>
+			</div>
+			<!-- top-area End -->
+		</header>
+	</div>
+	<!--welcome-hero end -->
+	<!--populer-products start -->
+	<div th:fragment="layout-content-populer-product">
+		<section id="populer-products" class="populer-products">
+			<div class="container">
+				<div class="populer-products-content">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="single-populer-products">
+								<div class="single-populer-product-img mt40">
+									<img src="/images/populer-products/p1.png" alt="populer-products images">
+								</div>
+								<h2>
+									<a href="#">Ghế có tay</a>
+								</h2>
+								<div class="single-populer-products-para">
+									<p>Làm bằng đệm cao cấp</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="single-populer-products">
+								<div class="single-inner-populer-products">
+									<div class="row">
+										<div class="col-md-4 col-sm-12">
+											<div class="single-inner-populer-product-img">
+												<img src="/images/populer-products/p2.png" alt="populer-products images">
+											</div>
+										</div>
+										<div class="col-md-8 col-sm-12">
+											<div class="single-inner-populer-product-txt">
+												<h2>
+													<a href="#">Mẫu ghế ưa chuộng </a>
+												</h2>
+												<p>Sản phẩm được ưa chuộng nhất của chúng tôi</p>
+												<div class="populer-products-price">
+													<h4>
+														Giá từ <span>800.000Đ</span>
+													</h4>
+												</div>
+												<button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='comming-soon'">Tham khảo thêm</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.container-->
+
+		</section>
+	</div>
+	<!--populer-products end-->
+
+	<!--new-arrivals start -->
+	<div th:fragment="layout-content-new-arrivals">
+		<section id="new-arrivals" class="new-arrivals">
+			<div class="container">
+				<div class="section-header">
+					<h2>Sản phẩm mới</h2>
+				</div>
+				<!--/.section-header-->
+				<div class="new-arrivals-content">
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals1.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Ghế chân cao lót đệm</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals2.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Ghế sofa</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals3.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Ghế lắc</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals4.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Ghế sành điệu</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals5.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Ghế hiện đại</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals6.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Bộ bàn ăn gia đình</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals7.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Ghế đôi</a>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="/images/collection/arrivals8.png" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4>
+									<a th:href="#{link.comming-soon}">Giường gỗ tràm</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.container-->
+
+		</section>
+	</div>
+	<!--new-arrivals end -->
+
+	<!--sofa-collection start -->
+	<div th:fragment="layout-content-sofa-collection">
+		<section id="blog" class="blog">
+			<div class="owl-carousel owl-theme" id="collection-carousel">
+				<div class="sofa-collection collectionbg1">
+					<div class="container">
+						<div class="sofa-collection-txt">
+							<h2>
+								Bộ phòng ngủ <br />dành cho gia đình
+							</h2>
+							<div class="sofa-collection-price">
+								<p></p>
+								<h4>
+									Giá từ <span>25.000.000đ</span>
+								</h4>
+							</div>
+							<button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='comming-soon'">Chi tiết</button>
+						</div>
+					</div>
+				</div>
+				<!--/.sofa-collection-->
+				<div class="sofa-collection collectionbg2">
+					<div class="container">
+						<div class="sofa-collection-txt">
+							<h2>Bộ phòng bếp</h2>
+							<p></p>
+							<div class="sofa-collection-price">
+								<h4>
+									Giá từ <span>20.000.000đ</span>
+								</h4>
+							</div>
+							<button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='comming-soon'">Chi tiết</button>
+						</div>
+					</div>
+				</div>
+				<!--/.sofa-collection-->
+			</div>
+			<!--/.collection-carousel-->
+
+		</section>
+	</div>
+	<!--sofa-collection end -->
+
+	<!--feature start -->
+	<div th:fragment="layout-content-feature">
+		<section id="feature" class="feature">
+			<div class="container">
+				<div class="section-header">
+					<h2>Sản phẩm nổi bật</h2>
+				</div>
+				<!--/.section-header-->
+				<div class="feature-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="/images/features/f1.jpg" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<!-- <p>
+										<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <span class="spacial-feature-icon"><i class="fa fa-star"></i></span> <span class="feature-review">(45 review)</span>
+									</p> -->
+									<h3>
+										<a th:href="#{link.comming-soon}">Sofa màu tự nhiên</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="/images/features/f2.jpg" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<h3>
+										<a th:href="#{link.comming-soon}">Bộ bàn ghế đan mây</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="/images/features/f3.jpg" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<h3>
+										<a th:href="#{link.comming-soon}">Bộ bàn ghế văn phòng</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="/images/features/f4.jpg" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<h3>
+										<a th:href="#{link.comming-soon}">Ghế tròn</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.container-->
+
+		</section>
+	</div>
+	<!--feature end -->
+
+	<!-- clients strat -->
+	<div th:fragment="layout-content-client">
+		<section id="clients" class="clients">
+			<div class="container">
+				<div class="owl-carousel owl-theme" id="client">
+					<div class="item">
+						<a th:href="#{link.comming-soon}"> <img src="/images/clients/c1.png" alt="brand-image" />
+						</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+						<a th:href="#{link.comming-soon}"> <img src="/images/clients/c2.png" alt="brand-image" />
+						</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+						<a th:href="#{link.comming-soon}"> <img src="/images/clients/c3.png" alt="brand-image" />
+						</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+						<a th:href="#{link.comming-soon}"> <img src="/images/clients/c4.png" alt="brand-image" />
+						</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+						<a th:href="#{link.comming-soon}"> <img src="/images/clients/c5.png" alt="brand-image" />
+						</a>
+					</div>
+					<!--/.item-->
+				</div>
+				<!--/.owl-carousel-->
+
+			</div>
+			<!--/.container-->
+
+		</section>
+	</div>
+	<!-- clients end -->
+
+	<!--newsletter strat -->
+	<div th:fragment="layout-footer-newsletter">
+		<section id="newsletter" class="newsletter">
+			<div class="container">
+				<div class="hm-footer-details">
+					<div class="row">
+						<div class=" col-md-4 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Thông tin</h4>
+								</div>
+								<!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a th:href="#{link.comming-soon}">Về chúng tôi</a></li>
+										<!--/li-->
+										<li><a th:href="#{link.comming-soon}">Liên hệ</a></li>
+										<!--/li-->
+										<li>Địa chỉ:
+											<p style="color: black; font-size: 14px;">Thành phố Dĩ An, tỉnh Bình Dương</p>
+										</li>
+										<!--/li-->
+									</ul>
+									<!--/ul-->
+								</div>
+								<!--/.hm-foot-menu-->
+							</div>
+							<!--/.hm-footer-widget-->
+						</div>
+						<!--/.col-->
+						<div class=" col-md-4 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Bộ sưu tập</h4>
+								</div>
+								<!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a th:href="#{link.comming-soon}">Ghế</a></li>
+										<!--/li-->
+										<li><a th:href="#{link.comming-soon}">Bàn</a></li>
+										<!--/li-->
+										<li><a th:href="#{link.comming-soon}">Bộ nhà bếp</a></li>
+										<!--/li-->
+										<li><a th:href="#{link.comming-soon}">Giường</a></li>
+										<!--/li-->
+										<li><a th:href="#{link.comming-soon}">Bộ phòng ngủ</a></li>
+										<!--/li-->
+									</ul>
+									<!--/ul-->
+								</div>
+								<!--/.hm-foot-menu-->
+							</div>
+							<!--/.hm-footer-widget-->
+						</div>
+						<!--/.col-->
+						<!--/.col-->
+						<div class=" col-md-4 col-sm-6  col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Nhận thông tin</h4>
+								</div>
+								<!--/.hm-foot-title-->
+								<div class="hm-foot-para">
+									<p>Chúng tôi sẽ gửi thông tin về sản phẩm mới nhất đến bạn</p>
+								</div>
+								<!--/.hm-foot-para-->
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Nhập email....">
+									</div>
+									<!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-location-arrow"></i></span>
+									</div>
+									<!--/.foot-email-icon-->
+								</div>
+								<!--/.hm-foot-email-->
+							</div>
+							<!--/.hm-footer-widget-->
+						</div>
+						<!--/.col-->
+					</div>
+					<!--/.row-->
+				</div>
+				<!--/.hm-footer-details-->
+
+			</div>
+			<!--/.container-->
+
+		</section>
+	</div>
+	<!--newsletter end -->
+
+	<!--footer start-->
+	<div th:fragment="layout-footer-text">
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<div class="footer-social">
+						<a th:href="#{link.facebook}"><i class="fa fa-facebook"></i></a> <a th:href="#{link.instagram}"><i class="fa fa-instagram"></i></a> <a th:href="#{link.linkedin}"><i class="fa fa-linkedin"></i></a> <a th:href="#{link.pinterest}"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<p>Phiên bản thử nghiệm</p>
+					<!--/p-->
+				</div>
+				<!--/.text-center-->
+			</div>
+			<!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+
+			</div>
+			<!--/.scroll-Top-->
+
+		</footer>
+	</div>
+	<!--footer end-->
+
+
+</body>
+
+</html>
